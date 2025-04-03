@@ -31,11 +31,11 @@ const Navbar = () => {
       className={
         scroll
           ? "scroll-header hidden md:flex"
-          : "px-6 transition-all duration-300 ease-in-out hidden md:flex"
+          : "px-7 transition-all duration-300 ease-in-out hidden md:flex"
       }
     >
       <nav className="w-full flex justify-between bg-[#ffffff31]">
-        <ul className="flex justify-between items-center px-7 py-5 gap-5 list-none font-semibold">
+        <ul className="flex justify-between items-center px-7 py-5 gap-7 list-none font-semibold">
           {navItems.map((item, i) => (
             <li key={i}>
               <Link
