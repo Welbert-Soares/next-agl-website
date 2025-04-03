@@ -4,9 +4,13 @@ import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
 import { navItems } from "@/constants/routes";
+import { usePathname } from "next/navigation";
 
 const Navbar = () => {
   const [scroll, setScroll] = useState(false);
+
+  const pathname = usePathname();
+
   const handleScroll = () => {
     if (window.scrollY > 50) {
       setScroll(true);
@@ -31,10 +35,15 @@ const Navbar = () => {
       }
     >
       <nav className="w-full flex justify-between bg-[#ffffff31]">
-        <ul className="flex justify-between items-center px-7 py-5 gap-5 list-none">
+        <ul className="flex justify-between items-center px-7 py-5 gap-5 list-none font-semibold">
           {navItems.map((item, i) => (
             <li key={i}>
-              <Link href={item.href} className={"text-slate-300 text-normal"}>
+              <Link
+                href={item.href}
+                className={`${
+                  pathname === item.href ? "text-orange-400" : "text-slate-300"
+                } `}
+              >
                 {item.name}
               </Link>
             </li>
