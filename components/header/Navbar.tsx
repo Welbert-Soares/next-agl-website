@@ -3,19 +3,10 @@
 import Link from "next/link";
 import React, { useEffect, useState } from "react";
 
+import { navItems } from "@/constants/routes";
+
 const Navbar = () => {
-  const navItems = [
-    { name: "Página Inicial", href: "/" },
-    { name: "Todos os cursos", href: "/courses" },
-    { name: "Sobre", href: "/about" },
-    { name: "Equipe", href: "/team" },
-    { name: "Doação", href: "/donation" },
-    { name: "Notícias", href: "/blog" },
-    { name: "Contado", href: "/contact" },
-  ];
-
   const [scroll, setScroll] = useState(false);
-
   const handleScroll = () => {
     if (window.scrollY > 50) {
       setScroll(true);
@@ -35,8 +26,8 @@ const Navbar = () => {
     <div
       className={
         scroll
-          ? "scroll-header"
-          : "flex px-6 transition-all duration-300 ease-in-out"
+          ? "scroll-header hidden md:flex"
+          : "px-6 transition-all duration-300 ease-in-out hidden md:flex"
       }
     >
       <nav className="w-full flex justify-between bg-[#ffffff31]">

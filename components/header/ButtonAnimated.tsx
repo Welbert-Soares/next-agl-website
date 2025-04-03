@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
 
 const ButtonAnimated = () => {
   return (
-    <div className="social flex flex-row justify-center items-center gap-4">
+    <div className="hidden social md:flex flex-row justify-center items-center gap-4">
       <a
         href="https://www.youtube.com/channel/UC5A6y5ufYB54fCY82tdQ9aQ"
         target="_blank"
@@ -73,7 +73,7 @@ const ButtonAnimated = () => {
         </section>
       </a>
     </div>
-  )
-}
+  );
+};
 
-export default ButtonAnimated
+export default ButtonAnimated;
