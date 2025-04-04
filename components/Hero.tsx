@@ -6,7 +6,7 @@ import { Button } from "./ui/button";
 import { Modal } from "./Modal";
 const Hero = () => {
   return (
-    <div className="bg-[url(/images/bgImagem.png)] bg-cover bg-right bg-no-repeat h-dvh flex flex-col justify-end md:justify-center items-center pb-24 md:pb-0 gap-6">
+    <div className="bg-[url(/images/bgImagem.png)] bg-cover bg-right md:bg-right-top bg-no-repeat h-dvh flex flex-col justify-end md:justify-center items-center pb-24 md:pb-0 gap-6">
       <section className="p-4 md:p-10 ">
         <div className="flex flex-col text-white gap-3">
           <span className="text-lg md:text-xl font-semibold">

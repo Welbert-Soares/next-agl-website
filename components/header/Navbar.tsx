@@ -41,7 +41,7 @@ const Navbar = () => {
               <Link
                 href={item.href}
                 className={`${
-                  pathname === item.href ? "text-orange-400" : "text-slate-300"
+                  pathname === item.href ? "text-secondary" : "text-slate-300"
                 } `}
               >
                 {item.name}

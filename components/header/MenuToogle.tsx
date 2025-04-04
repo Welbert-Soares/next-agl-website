@@ -36,7 +36,7 @@ const MenuToogle = () => {
               key={i}
               onClick={() => handleRouteChange(route.href)}
               className={`${
-                pathname === route.href ? "text-orange-300" : "text-slate-400"
+                pathname === route.href ? "text-secondary" : "text-slate-400"
               }`}
             >
               {route.name}
