@@ -4,7 +4,7 @@ import Navbar from "./Navbar";
 
 const Header = () => {
   return (
-    <header className="w-full flex flex-col bg-blue-950">
+    <header className="w-full flex flex-col absolute">
       <Head />
       <Navbar />
     </header>

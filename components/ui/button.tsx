@@ -22,8 +22,6 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         btn_primary: "bg-[#312f92] text-white hover:bg-[#312f92]/90",
         btn_secondary: "bg-white text-[#312f92] hover:bg-white/90",
-        youtube:
-          "group flex justify-center p-2 rounded-md drop-shadow-xl bg-[#CD201F] from-gray-800 text-white font-semibold hover:translate-y-3 hover:rounded-[50%] transition-all duration-500 hover:bg-[#CD201F] hover:shadow-2xl hover:shadow-[#CD201F]",
       },
       size: {
         default: "h-9 px-4 py-2 has-[>svg]:px-3",
