@@ -1,5 +1,6 @@
 import React from "react";
 import { homeAbout } from "@/constants/homeAbout";
+import Heading from "./Heading";
 
 const AboutCard = () => {
   return (
@@ -11,14 +12,10 @@ const AboutCard = () => {
         />
       </div>
       <div className="flex flex-col items-center justify-center w-full h-full p-2">
-        <div className="flex flex-col gap-2 mb-6">
-          <span className="text-nomal font-semibold text-secondary">
-            APRENDA QUALQUER COISA
-          </span>
-          <span className="text-2xl font-semibold">
-            Benefícios da experiência em aprendizagem online
-          </span>
-        </div>
+        <Heading
+          title="APRENDA QUALQUER COISA"
+          subtitle="Benefícios da experiência em aprendizagem online"
+        />
 
         <div className="grid grid-cols-1 gap-4">
           {homeAbout.map((item, i) => (
