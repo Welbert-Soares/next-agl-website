@@ -36,6 +36,10 @@ const Navbar = () => {
     >
       <nav className="w-full flex justify-between bg-[#ffffff31] rounded-lg">
         <ul className="flex justify-between items-center px-7 py-5 gap-7 list-none font-semibold">
+          {scroll ? (
+            <img src={"/images/AGLLogo.png"} className="w-8 h-8" alt="" />
+          ) : null}
+
           {navItems.map((item, i) => (
             <li key={i}>
               <Link
@@ -49,7 +53,11 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <div className="bg-[#312f92] text-white px-[70px] py-7 clip-custom rounded-r-lg">
+        <div
+          className={`bg-[#312f92] text-white px-[70px] py-7 clip-custom ${
+            scroll ? "rounded-r-none" : "rounded-lg"
+          }`}
+        >
           <div className=" text-center button bg-primary-800 text-white font-semibold border-none rounded transition duration-500 ease-in-out transform hover:-translate-y-1 hover:bg-primary-900 ">
             <Link href="/donate" className="flex">
               DOE AGORA
