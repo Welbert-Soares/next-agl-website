@@ -136,6 +136,7 @@
     width: 100%;
     z-index: 1000;
     background-color: #fff;
+    border-radius: 0 0;
     /* Ajuste conforme necessário */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     /* Sombra para destaque */

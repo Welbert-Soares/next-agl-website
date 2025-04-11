@@ -34,7 +34,7 @@ const Navbar = () => {
           : "px-7 transition-all duration-300 ease-in-out hidden md:flex"
       }
     >
-      <nav className="w-full flex justify-between bg-[#ffffff31]">
+      <nav className="w-full flex justify-between bg-[#ffffff31] rounded-lg">
         <ul className="flex justify-between items-center px-7 py-5 gap-7 list-none font-semibold">
           {navItems.map((item, i) => (
             <li key={i}>
@@ -49,7 +49,7 @@ const Navbar = () => {
             </li>
           ))}
         </ul>
-        <div className="bg-[#312f92] text-white px-[70px] py-7 clip-custom">
+        <div className="bg-[#312f92] text-white px-[70px] py-7 clip-custom rounded-r-lg">
           <div className=" text-center button bg-primary-800 text-white font-semibold border-none rounded transition duration-500 ease-in-out transform hover:-translate-y-1 hover:bg-primary-900 ">
             <Link href="/donate" className="flex">
               DOE AGORA
