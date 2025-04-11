@@ -11,7 +11,7 @@ const Testimonal = () => {
         title="VEJA O QUE DIZEM SOBRE NÓS"
         subtitle="Depoimentos sobre nosso trabalho"
       />
-      <div className="grid grid-cols-1 lg:grid-cols-3 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
         {testimonal.map((testimony, i) => (
           <Card key={i} className="bg-slate-50 justify-center items-center">
             <CardContent className="flex flex-col gap-4">

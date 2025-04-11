@@ -23,7 +23,7 @@ const CardCourses = () => {
                 <img
                   src={courses.hoverCover}
                   alt=""
-                  className="w-14 h-14 md:w-16 md:h-16  xl:w-20 xl:h-20 hidden group-hover:flex transition-opacity duration-300"
+                  className="w-14 h-14 md:w-16 md:h-16 xl:w-20 xl:h-20 hidden group-hover:flex transition-opacity duration-300"
                 />
               </div>
               <span className="font-bold md:text-lg">{courses.courseName}</span>
