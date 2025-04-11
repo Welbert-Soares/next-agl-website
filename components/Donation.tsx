@@ -13,7 +13,7 @@ const Donation = () => {
 
       <Card className="bg-slate-50 w-3/4 lg:w-2/4">
         <CardContent className="flex flex-col items-center justify-center gap-4">
-          <span className=" uppercase text-xl font-bold">
+          <span className="text-center text-lg uppercase md:text-xl font-bold">
             Apoie nossa causa
           </span>
           <p className="text-slate-700 text-center font-semibold">
