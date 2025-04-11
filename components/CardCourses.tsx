@@ -13,17 +13,17 @@ const CardCourses = () => {
             key={i}
             className="flex justify-center items-center group bg-slate-100 hover:bg-primary transition-colors duration-300 hover:text-white"
           >
-            <CardContent className="flex flex-col justify-center items-center text-center gap-2">
+            <CardContent className="flex flex-col justify-center items-center text-center">
               <div className="flex justify-center">
                 <img
                   src={courses.cover}
                   alt=""
-                  className="w-20 h-20 group-hover:hidden transition-opacity duration-300"
+                  className="w-14 h-14 md:w-16 md:h-16 xl:w-20 xl:h-20 group-hover:hidden transition-opacity duration-300"
                 />
                 <img
                   src={courses.hoverCover}
                   alt=""
-                  className="w-20 h-20 hidden group-hover:flex transition-opacity duration-300"
+                  className="w-14 h-14 md:w-16 md:h-16  xl:w-20 xl:h-20 hidden group-hover:flex transition-opacity duration-300"
                 />
               </div>
               <span className="font-bold md:text-lg">{courses.courseName}</span>
